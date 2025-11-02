@@ -1,10 +1,11 @@
 import dynamic from "next/dynamic";
 import MonacoEditor from "@/components/monacoEditor";
+import OpenEditor from "@/components/openEditorButton";
 
 export default function Home() {
   return (
-    <div className="p-8">
-      <MonacoEditor />
-    </div>
+        <div className="flex-1 w-full flex flex-col gap-12">
+            <MonacoEditor></MonacoEditor>
+        </div>
   );
 }
